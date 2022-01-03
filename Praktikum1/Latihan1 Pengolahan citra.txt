@@ -1,0 +1,13 @@
+Latihan Pengolahan citra tentang kontras, cerah negatif
+codingan di bawah ini
+
+>>> image= imread ('isi lokasi file');
+>>> imshow (image);
+>>> cerah=(image + 60);
+>>> figure (2) :imshow (cerah);
+>>> subplot (2,2,1); imshow(image);title('gambar. citra asli');
+>>> subplot (2,2,2); imshow(cerah);title('gambar. citra cerah');
+>>> kontras =(2.5 * image);
+>>> subplot (2,2,3); imshow(kontras);title('gambar. citra kontras');
+>>> negatif = (255 - image);
+>>> subplot (2,2,4); imshow(negatif);title('gambar. citra negatif');
