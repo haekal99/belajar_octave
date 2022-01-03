@@ -1,0 +1,13 @@
+L=imread('C:\Users\ACER\Documents\Praktek Program TI\Pengolahan Citra\quiz13\satu.jpg');
+imshow(L);
+R=L(:,:,1);
+G=L(:,:,2);
+B=L(:,:,3);
+Red=cat(3,R,G*0,B*0);
+Green=cat(3,R*0,G,B*0);
+Blue=cat(3,R*0,G*0,B);
+figure(1);
+subplot(2,2,1);imshow(L);title('citra asli');
+subplot(2,2,2);imshow(Green);title('citra green');
+subplot(2,2,3);imshow(Red);title('citra red');
+subplot(2,2,4);imshow(Blue);title('citra Blue');
